@@ -32,8 +32,8 @@
         <input type="text"  id="valor" placeholder="Valor do produto">
       </div>
 
-      <button onclick="produto.adicionar()">Adicionar</button>
-      <button onclick="produto.excluir()">Excluir</button>
+      <button onclick="produto.salvar()">Salvar</button>
+      <button onclick="produto.cancelar()">Cancelar</button>
     </div>
 
     <div class="content">
@@ -44,16 +44,8 @@
           <th>Valor</th>
           <th class="center">Ações</th>
         </thead>
-        <tbody>
-          <tr>
-            <td class="center">1</td>
-            <td>Mesa</td>
-            <td>R$ 1900</td>
-            <td class="center">
-              <img src="assets/edit.png" alt="icone de editar"> 
-              <img src="assets/trash.png" alt="icone de lixeira">
-            </td>
-          </tr>
+        <tbody id="tbody">
+          
         </tbody>
       </table>
     </div>
