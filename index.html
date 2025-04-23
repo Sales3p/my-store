@@ -18,7 +18,7 @@
   <main>
     <div class="title">
       <h2>Produtos</h2>
-      <span>Lista quisquer produtos que desejar</span>
+      <span>Liste quaisquer produtos que desejar</span>
     </div>
 
     <div class="card">
@@ -45,7 +45,15 @@
           <th class="center">Ações</th>
         </thead>
         <tbody id="tbody">
-          
+          <tr>
+            <td class="center">1</td>
+            <td>Bolo</td>
+            <td>1200</td>
+            <td class="center">
+              <img src="assets/edit.png" onclick="produto.preparaEdicao({&quot;id&quot;:1,&quot;nomeProduto&quot;:&quot;Bolo&quot;,&quot;preco&quot;:1200})">
+              <img src="assets/gap.png"><img src="assets/trash.png" onclick="produto.deletar(1)">
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
